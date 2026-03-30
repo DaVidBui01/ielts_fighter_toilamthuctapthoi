@@ -1,0 +1,39 @@
+IELTS Fighter Project Setup Guide
+
+Dự án sử dụng Laravel 11/12, PHP 8.2+ và MySQL.
+
+1. Yêu cầu hệ thống
+
+PHP >= 8.2 (Khuyên dùng Laragon để có sẵn môi trường).
+Composer.
+MySQL.
+
+2. Các bước cài đặt (Dành cho Team Lead)
+
+Bước 1: Clone dự án và cài đặt thư viện
+Mở Terminal tại thư mục muốn lưu dự án:
+
+git clone [Link-Github-Cua-Ban]
+cd ielts-project
+composer install
+
+Bước 2: Cấu hình môi trường (.env)
+Copy file mẫu và tạo file .env:
+cp .env.example .env
+
+Mở file .env vừa tạo, chỉnh sửa thông số Database (DB_DATABASE, DB_USERNAME, DB_PASSWORD) cho khớp với máy cá nhân.
+
+Bước 3: Khởi tạo Key và Database
+
+php artisan key:generate
+php artisan migrate:fresh --seed
+
+(Lệnh này sẽ tự động tạo bảng và nạp tài khoản mẫu: admin@gmail.com / 123456)
+
+Bước 4: Chạy ứng dụngBashphp artisan serve
+Truy cập: http://127.0.0.1:8000
+
+
+3. Tài khoản thử nghiệm
+Admin:  admin@gmail.com   123456
+Student:   student@gmail.com   123456
