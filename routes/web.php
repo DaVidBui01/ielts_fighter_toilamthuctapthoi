@@ -3,6 +3,7 @@
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 // 1. Trang Homepage (Quảng bá)
@@ -20,3 +21,9 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 });
+// Dashboard
+Route::get('/student/dashboard', [App\Http\Controllers\DashboardController::class, 'studentIndex'])->name('student.dashboard')->middleware('auth');
+// Dashboard cho Admin
+Route::get('/admin/dashboard', [App\Http\Controllers\DashboardController::class, 'adminIndex'])->name('admin.dashboard')->middleware('auth');
+// Route quản lý người dùng (ví dụ)
+Route::get('/admin/users', [UserController::class, 'index'])->name('admin.users');
