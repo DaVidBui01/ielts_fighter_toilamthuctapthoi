@@ -103,73 +103,61 @@
             </div>
 
             <div class="row g-4">
-                <div class="col-md-8">
-                    <div class="card border-0 shadow-sm p-4">
-                        <div class="d-flex justify-content-between align-items-center mb-3">
-                            <h5 class="fw-bold mb-0">Đăng ký tư vấn gần đây</h5>
-                            <a href="#" class="btn btn-sm btn-link text-danger">Xem tất cả</a>
+                            <div class="col-md-12">
+                                <div class="card border-0 shadow-sm p-4">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <h5 class="fw-bold mb-0">Đăng ký tư vấn gần đây (Khu vực Hải Phòng)</h5>
+                                        <div class="d-flex gap-2">
+                                            <span class="badge bg-light text-dark border">Cơ sở Lạch Tray</span>
+                                            <span class="badge bg-light text-dark border">Cơ sở Kiến An</span>
+                                            <a href="#" class="btn btn-sm btn-link text-danger ms-2">Xem tất cả</a>
+                                        </div>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table table-hover align-middle">
+                                            <thead class="table-light">
+                                                <tr>
+                                                    <th>Học viên</th>
+                                                    <th>SĐT / Email</th>
+                                                    <th>Mục tiêu</th>
+                                                    <th>Cơ sở đăng ký</th>
+                                                    <th>Trạng thái</th>
+                                                    <th>Hành động</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>Nguyễn Văn Thành</strong></td>
+                                                    <td>0912.345.xxx<br><small class="text-muted">thanhnv@gmail.com</small></td>
+                                                    <td><span class="badge bg-info">7.0 IELTS</span></td>
+                                                    <td>Lạch Tray</td>
+                                                    <td><span class="badge bg-warning text-dark">Chờ gọi</span></td>
+                                                    <td>
+                                                        <button class="btn btn-sm btn-primary"><i class="bi bi-telephone-fill me-1"></i> Gọi ngay</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Lê Thị Mai</strong></td>
+                                                    <td>0988.777.xxx<br><small class="text-muted">maile@gmail.com</small></td>
+                                                    <td><span class="badge bg-info">6.5 IELTS</span></td>
+                                                    <td>Kiến An</td>
+                                                    <td><span class="badge bg-success">Đã tư vấn</span></td>
+                                                    <td><button class="btn btn-sm btn-outline-primary">Chi tiết</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Trần Minh Hoàng</strong></td>
+                                                    <td>0904.123.xxx<br><small class="text-muted">hoangtm@gmail.com</small></td>
+                                                    <td><span class="badge bg-info">Cấp tốc 5.5</span></td>
+                                                    <td>Lạch Tray</td>
+                                                    <td><span class="badge bg-secondary">Không nhấc máy</span></td>
+                                                    <td><button class="btn btn-sm btn-outline-primary">Gọi lại</button></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="table-responsive">
-                            <table class="table table-hover align-middle">
-                                <thead class="table-light">
-                                    <tr>
-                                        <th>Học viên</th>
-                                        <th>SĐT</th>
-                                        <th>Mục tiêu</th>
-                                        <th>Trạng thái</th>
-                                        <th>Hành động</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><strong>Nguyễn Văn Thành</strong><br><small class="text-muted">thanhnv@gmail.com</small></td>
-                                        <td>0912.345.xxx</td>
-                                        <td><span class="badge bg-info">7.0 IELTS</span></td>
-                                        <td><span class="badge bg-warning text-dark">Chờ gọi</span></td>
-                                        <td><button class="btn btn-sm btn-outline-primary">Hỗ trợ</button></td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Lê Thị Mai</strong><br><small class="text-muted">maile@gmail.com</small></td>
-                                        <td>0988.777.xxx</td>
-                                        <td><span class="badge bg-info">6.5 IELTS</span></td>
-                                        <td><span class="badge bg-success">Đã tư vấn</span></td>
-                                        <td><button class="btn btn-sm btn-outline-primary">Chi tiết</button></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card border-0 shadow-sm p-4">
-                        <h5 class="fw-bold mb-3">Phân bổ theo cơ sở</h5>
-                        <div class="d-flex justify-content-between mb-2">
-                            <span>Hà Nội (Cầu Giấy)</span>
-                            <span class="fw-bold">450</span>
-                        </div>
-                        <div class="progress mb-3" style="height: 8px;">
-                            <div class="progress-bar bg-danger" style="width: 45%"></div>
-                        </div>
-
-                        <div class="d-flex justify-content-between mb-2">
-                            <span>Đà Nẵng (Hải Châu)</span>
-                            <span class="fw-bold">300</span>
-                        </div>
-                        <div class="progress mb-3" style="height: 8px;">
-                            <div class="progress-bar bg-warning" style="width: 30%"></div>
-                        </div>
-
-                        <div class="d-flex justify-content-between mb-2">
-                            <span>TP.HCM (Quận 10)</span>
-                            <span class="fw-bold">500</span>
-                        </div>
-                        <div class="progress mb-3" style="height: 8px;">
-                            <div class="progress-bar bg-success" style="width: 50%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </main>
     </div>
 </div>

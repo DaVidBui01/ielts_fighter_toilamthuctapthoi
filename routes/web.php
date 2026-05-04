@@ -21,7 +21,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 });
-// Dashboard
+// Dashboard chung cho học viên
 Route::get('/student/dashboard', [App\Http\Controllers\DashboardController::class, 'studentIndex'])->name('student.dashboard')->middleware('auth');
 // Dashboard cho Admin
 Route::get('/admin/dashboard', [App\Http\Controllers\DashboardController::class, 'adminIndex'])->name('admin.dashboard')->middleware('auth');

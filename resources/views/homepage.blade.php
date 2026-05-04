@@ -12,7 +12,7 @@
         [x-cloak] { display: none !important; }
         :root { --main-red: #e63946; --dark-red: #c1272d; }
 
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333;}
         .text-fighter { color: var(--main-red); }
         .bg-fighter { background-color: var(--main-red); color: white; }
         .btn-fighter { background-color: var(--main-red); color: white; border-radius: 25px; padding: 10px 25px; transition: 0.3s; border: none; }
@@ -60,7 +60,7 @@
             <div class="row align-items-center">
                 <div class="col-md-6">
                     <h5 class="text-fighter fw-bold mb-3">HÀNH TRÌNH CHINH PHỤC IELTS</h5>
-                    <h1 class="display-4 fw-bold mb-4">IELTS Fighter - Học IELTS dễ như ăn bánh</h1>
+                    <h1 class="display-4 fw-bold mb-4">IELTS Fighter - Học IELTS</h1>
                     <p class="lead mb-5 text-muted">Chúng tôi nỗ lực mỗi ngày để cùng các bạn chinh phục đỉnh cao IELTS, phục vụ các mục tiêu du học, định cư và công việc phía trước.</p>
                     <div class="d-flex gap-3">
                         <button @click="showModal = true" class="btn btn-fighter btn-lg">ĐĂNG KÝ TƯ VẤN</button>
@@ -68,7 +68,8 @@
                     </div>
                 </div>
                 <div class="col-md-6 text-center mt-5 mt-md-0">
-                    <div class="img-placeholder rounded-3 shadow" style="height: 350px;">[Hình ảnh Banner: Đội ngũ Chiến binh IELTS]</div>
+                    <!-- <div class="img-placeholder rounded-3 shadow" style="height: 350px;">[Hình ảnh Banner: Đội ngũ Chiến binh IELTS]</div> -->
+                    <img src="{{ asset('img/gioi_thieu.png') }}" alt="Đội ngũ Chiến binh IELTS" class="img-fluid rounded-3 shadow">
                 </div>
             </div>
         </div>
@@ -141,12 +142,7 @@
         <div class="container text-center">
             <h2 class="fw-bold mb-3">LỘ TRÌNH ĐÀO TẠO CHUẨN QUỐC TẾ</h2>
             <p class="text-muted mb-5">Từ con số 0 đến mục tiêu 7.0+ trong thời gian ngắn nhất</p>
-            <div class="img-placeholder rounded-4 shadow-sm w-100" style="height: 450px; background: #dfe4ea; border: 3px dashed #636e72;">
-                <div class="text-center">
-                    <h3 class="fw-bold text-secondary">[ KHUNG ẢNH LỘ TRÌNH ĐÀO TẠO ]</h3>
-                    <p>Học viên có thể chèn ảnh Infographic lộ trình vào đây sau</p>
-                </div>
-            </div>
+            <img src="img/lo_trinh.jpg" alt="Lộ trình đào tạo" class="img-fluid rounded-4 shadow-sm w-100">
         </div>
     </section>
 
@@ -178,7 +174,8 @@
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="card course-card shadow-sm h-100">
-                        <div class="img-placeholder text-center">Khóa học Pre-IELTS<br>(Nền tảng vững chắc)</div>
+                        <!-- <div class="img-placeholder text-center">Khóa học Pre-IELTS<br>(Nền tảng vững chắc)</div> -->
+                        <img src="{{ asset('img/cam_ket_dau_ra_1.png') }}" alt="Khóa học Fighter A" class="img-fluid">
                         <div class="card-body">
                             <h5 class="fw-bold text-fighter">Pre-IELTS: 0 - 3.5+</h5>
                             <p class="small text-muted">Dành cho người mất gốc, xây dựng lại hệ thống ngữ pháp, từ vựng và phát âm chuẩn.</p>
@@ -192,7 +189,8 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card course-card shadow-sm h-100">
-                        <div class="img-placeholder text-center">IELTS Fighter A<br>(Target 5.0 - 5.5)</div>
+                        <!-- <div class="img-placeholder text-center">IELTS Fighter A<br>(Target 5.0 - 5.5)</div> -->
+                        <img src="{{ asset('img/cam_ket_dau_ra_2.png') }}" alt="Khóa học Fighter A" class="img-fluid">
                         <div class="card-body">
                             <h5 class="fw-bold text-fighter">Fighter A: 5.0 - 5.5+</h5>
                             <p class="small text-muted">Tập trung rèn luyện 4 kỹ năng theo chuẩn format đề thi, bứt phá band điểm trung bình.</p>
@@ -206,7 +204,8 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card course-card shadow-sm h-100">
-                        <div class="img-placeholder text-center">IELTS Fighter B<br>(Target 6.5 - 7.0+)</div>
+                        <!-- <div class="img-placeholder text-center">IELTS Fighter B<br>(Target 6.5 - 7.0+)</div> -->
+                        <img src="{{ asset('img/cam_ket_dau_ra_3.png') }}" alt="Khóa học Fighter B" class="img-fluid">
                         <div class="card-body">
                             <h5 class="fw-bold text-fighter">Fighter B: 6.5 - 7.0+</h5>
                             <p class="small text-muted">Luyện đề chuyên sâu, nắm vững kỹ thuật làm bài band cao và các chủ đề khó.</p>
